@@ -13,7 +13,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh "docker build -t suryrajsinh9506/my-ansi-image ."
+                    sh "sudo docker build -t suryrajsinh9506/my-ansi-image ."
                 }
             }
         }
