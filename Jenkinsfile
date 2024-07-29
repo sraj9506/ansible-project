@@ -14,6 +14,8 @@ pipeline {
             steps {
                 script {
                     sh "sudo docker build -t suryrajsinh9506/my-ansi-image ."
+		    sh "sudo docker login --username suryrajsinh9506 --password Suryrajsinh@9506"
+		    sh "sudo docker push suryrajsinh9506/my-ansi-image:latest"
                 }
             }
         }
